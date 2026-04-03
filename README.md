@@ -1,4 +1,4 @@
-# Hello, I'm Lakshay! 👋
+# Hello, I'm Lakshay! 👋🏻
 
 I'm a passionate Full Stack Developer specializing in modern web technologies and automation solutions. Welcome to my GitHub profile! Feel free to explore my projects and contributions.
 
