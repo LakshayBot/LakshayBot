@@ -85,7 +85,7 @@ Git & GitHub, VS Code, Postman, npm/yarn, Linux/Unix
 - 🔧 **LinkedIn Automation**: Advanced automation toolkit for professional networking
 - 🌐 **Web Applications**: Full-stack applications with modern tech stacks
 - 📊 **Database Solutions**: Efficient data management and processing systems
-- 🔄 **API Development**: RESTful services and integrations
+- 🔄 **API Development**: RESTful services and integrations.
 
 ---
 
