@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 370" width="350" height="370">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1b26"/>
+      <stop offset="100%" stop-color="#16161e"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Window frame -->
+  <rect x="0" y="0" width="350" height="370" rx="10" fill="#1a1b26" stroke="#3b4261" stroke-width="1.5"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="350" height="30" rx="10" fill="#24283b"/>
+  <rect x="0" y="15" width="350" height="15" fill="#24283b"/>
+
+  <!-- Traffic lights -->
+  <circle cx="16" cy="15" r="5.5" fill="#f7768e"/>
+  <circle cx="34" cy="15" r="5.5" fill="#e0af68"/>
+  <circle cx="52" cy="15" r="5.5" fill="#9ece6a"/>
+
+  <!-- Title -->
+  <text x="175" y="20" fill="#565f89" font-family="monospace" font-size="10" text-anchor="middle" font-weight="bold">agentic@lakshay:~</text>
+
+  <!-- Command 1 -->
+  <text opacity="0" x="18" y="60" fill="#7dcfff" font-family="Consolas,monospace" font-size="12" font-weight="bold">
+    $ docker compose up -d
+    <animate attributeName="opacity" from="0" to="1" begin="0.5s" dur="0.4s" fill="freeze"/>
+  </text>
+
+  <!-- Service lines -->
+  <text opacity="0" x="22" y="82" fill="#89b4fa" font-family="Consolas,monospace" font-size="11">
+    agentic-rag
+    <animate attributeName="opacity" from="0" to="1" begin="1.2s" dur="0.3s" fill="freeze"/>
+  </text>
+  <text opacity="0" x="122" y="82" fill="#565f89" font-family="Consolas,monospace" font-size="11">
+    ................
+    <animate attributeName="opacity" from="0" to="1" begin="1.2s" dur="0.3s" fill="freeze"/>
+  </text>
+  <text opacity="0" x="220" y="82" fill="#9ece6a" font-family="Consolas,monospace" font-size="11" font-weight="bold">
+    [OK]
+    <animate attributeName="opacity" from="0" to="1" begin="1.8s" dur="0.3s" fill="freeze"/>
+  </text>
+
+  <text opacity="0" x="22" y="102" fill="#89b4fa" font-family="Consolas,monospace" font-size="11">
+    ollama
+    <animate attributeName="opacity" from="0" to="1" begin="1.5s" dur="0.3s" fill="freeze"/>
+  </text>
+  <text opacity="0" x="108" y="102" fill="#565f89" font-family="Consolas,monospace" font-size="11">
+    ....................
+    <animate attributeName="opacity" from="0" to="1" begin="1.5s" dur="0.3s" fill="freeze"/>
+  </text>
+  <text opacity="0" x="220" y="102" fill="#9ece6a" font-family="Consolas,monospace" font-size="11" font-weight="bold">
+    [OK]
+    <animate attributeName="opacity" from="0" to="1" begin="2.1s" dur="0.3s" fill="freeze"/>
+  </text>
+
+  <text opacity="0" x="22" y="122" fill="#89b4fa" font-family="Consolas,monospace" font-size="11">
+    langfuse
+    <animate attributeName="opacity" from="0" to="1" begin="1.8s" dur="0.3s" fill="freeze"/>
+  </text>
+  <text opacity="0" x="111" y="122" fill="#565f89" font-family="Consolas,monospace" font-size="11">
+    ...................
+    <animate attributeName="opacity" from="0" to="1" begin="1.8s" dur="0.3s" fill="freeze"/>
+  </text>
+  <text opacity="0" x="220" y="122" fill="#9ece6a" font-family="Consolas,monospace" font-size="11" font-weight="bold">
+    [OK]
+    <animate attributeName="opacity" from="0" to="1" begin="2.4s" dur="0.3s" fill="freeze"/>
+  </text>
+
+  <text opacity="0" x="22" y="142" fill="#89b4fa" font-family="Consolas,monospace" font-size="11">
+    postgresql
+    <animate attributeName="opacity" from="0" to="1" begin="2.1s" dur="0.3s" fill="freeze"/>
+  </text>
+  <text opacity="0" x="116" y="142" fill="#565f89" font-family="Consolas,monospace" font-size="11">
+    ..................
+    <animate attributeName="opacity" from="0" to="1" begin="2.1s" dur="0.3s" fill="freeze"/>
+  </text>
+  <text opacity="0" x="220" y="142" fill="#9ece6a" font-family="Consolas,monospace" font-size="11" font-weight="bold">
+    [OK]
+    <animate attributeName="opacity" from="0" to="1" begin="2.7s" dur="0.3s" fill="freeze"/>
+  </text>
+
+  <text opacity="0" x="22" y="162" fill="#89b4fa" font-family="Consolas,monospace" font-size="11">
+    redis
+    <animate attributeName="opacity" from="0" to="1" begin="2.4s" dur="0.3s" fill="freeze"/>
+  </text>
+  <text opacity="0" x="101" y="162" fill="#565f89" font-family="Consolas,monospace" font-size="11">
+    .......................
+    <animate attributeName="opacity" from="0" to="1" begin="2.4s" dur="0.3s" fill="freeze"/>
+  </text>
+  <text opacity="0" x="220" y="162" fill="#9ece6a" font-family="Consolas,monospace" font-size="11" font-weight="bold">
+    [OK]
+    <animate attributeName="opacity" from="0" to="1" begin="3.0s" dur="0.3s" fill="freeze"/>
+  </text>
+
+  <!-- Command 2 -->
+  <text opacity="0" x="18" y="200" fill="#7dcfff" font-family="Consolas,monospace" font-size="12" font-weight="bold">
+    $ python -m agentic_rag
+    <animate attributeName="opacity" from="0" to="1" begin="3.5s" dur="0.4s" fill="freeze"/>
+  </text>
+
+  <!-- RAG lines -->
+  <text opacity="0" x="22" y="222" fill="#89b4fa" font-family="Consolas,monospace" font-size="11">
+    Loading RAG pipeline
+    <animate attributeName="opacity" from="0" to="1" begin="4.2s" dur="0.3s" fill="freeze"/>
+  </text>
+  <text opacity="0" x="166" y="222" fill="#565f89" font-family="Consolas,monospace" font-size="11">
+    ...
+    <animate attributeName="opacity" from="0" to="1" begin="4.2s" dur="0.3s" fill="freeze"/>
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="0.8s" begin="4.2s" repeatCount="3" fill="freeze"/>
+  </text>
+  <text opacity="0" x="208" y="222" fill="#9ece6a" font-family="Consolas,monospace" font-size="11" font-weight="bold">
+    [READY]
+    <animate attributeName="opacity" from="0" to="1" begin="5.0s" dur="0.3s" fill="freeze"/>
+  </text>
+
+  <text opacity="0" x="22" y="242" fill="#89b4fa" font-family="Consolas,monospace" font-size="11">
+    Initializing LangGraph
+    <animate attributeName="opacity" from="0" to="1" begin="4.6s" dur="0.3s" fill="freeze"/>
+  </text>
+  <text opacity="0" x="186" y="242" fill="#565f89" font-family="Consolas,monospace" font-size="11">
+    ...
+    <animate attributeName="opacity" from="0" to="1" begin="4.6s" dur="0.3s" fill="freeze"/>
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="0.8s" begin="4.6s" repeatCount="2" fill="freeze"/>
+  </text>
+  <text opacity="0" x="208" y="242" fill="#9ece6a" font-family="Consolas,monospace" font-size="11" font-weight="bold">
+    [READY]
+    <animate attributeName="opacity" from="0" to="1" begin="5.4s" dur="0.3s" fill="freeze"/>
+  </text>
+
+  <text opacity="0" x="22" y="262" fill="#89b4fa" font-family="Consolas,monospace" font-size="11">
+    Connecting to Qdrant
+    <animate attributeName="opacity" from="0" to="1" begin="5.0s" dur="0.3s" fill="freeze"/>
+  </text>
+  <text opacity="0" x="170" y="262" fill="#565f89" font-family="Consolas,monospace" font-size="11">
+    ...
+    <animate attributeName="opacity" from="0" to="1" begin="5.0s" dur="0.3s" fill="freeze"/>
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="0.8s" begin="5.0s" repeatCount="2" fill="freeze"/>
+  </text>
+  <text opacity="0" x="200" y="262" fill="#9ece6a" font-family="Consolas,monospace" font-size="11" font-weight="bold">
+    [LIVE]
+    <animate attributeName="opacity" from="0" to="1" begin="5.8s" dur="0.3s" fill="freeze"/>
+  </text>
+
+  <text opacity="0" x="22" y="282" fill="#89b4fa" font-family="Consolas,monospace" font-size="11">
+    Loading Langfuse traces
+    <animate attributeName="opacity" from="0" to="1" begin="5.4s" dur="0.3s" fill="freeze"/>
+  </text>
+  <text opacity="0" x="186" y="282" fill="#565f89" font-family="Consolas,monospace" font-size="11">
+    ...
+    <animate attributeName="opacity" from="0" to="1" begin="5.4s" dur="0.3s" fill="freeze"/>
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="0.8s" begin="5.4s" repeatCount="1" fill="freeze"/>
+  </text>
+  <text opacity="0" x="208" y="282" fill="#9ece6a" font-family="Consolas,monospace" font-size="11" font-weight="bold">
+    [READY]
+    <animate attributeName="opacity" from="0" to="1" begin="6.2s" dur="0.3s" fill="freeze"/>
+  </text>
+
+  <!-- Echo Ready -->
+  <text opacity="0" x="18" y="320" fill="#7dcfff" font-family="Consolas,monospace" font-size="12" font-weight="bold">
+    $ echo "All systems nominal."
+    <animate attributeName="opacity" from="0" to="1" begin="6.7s" dur="0.4s" fill="freeze"/>
+  </text>
+
+  <!-- Output + cursor -->
+  <text opacity="0" x="22" y="342" fill="#a9b1d6" font-family="Consolas,monospace" font-size="11">
+    All systems nominal.
+    <animate attributeName="opacity" from="0" to="1" begin="7.5s" dur="0.3s" fill="freeze"/>
+  </text>
+
+  <!-- Blinking cursor -->
+  <text opacity="0" x="18" y="360" fill="#7dcfff" font-family="Consolas,monospace" font-size="12" font-weight="bold">
+    $ _
+    <animate attributeName="opacity" from="0" to="1" begin="8.0s" dur="0.3s" fill="freeze"/>
+  </text>
+  <rect x="37" y="348" width="7" height="14" rx="1" fill="#7dcfff">
+    <animate attributeName="opacity" from="0" to="1" begin="8.0s" dur="0.3s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;0;1" dur="1s" begin="8.3s" repeatCount="indefinite"/>
+  </rect>
+</svg>
