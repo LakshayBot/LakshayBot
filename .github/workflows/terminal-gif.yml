@@ -5,10 +5,11 @@ on:
 
 jobs:
   generate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
       - run: mkdir -p assets
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - uses: charmbracelet/vhs-action@v1
         with:
           path: 'terminal.tape'
