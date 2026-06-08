@@ -10,7 +10,10 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - uses: charmbracelet/vhs-action@v2
+      - uses: charmbracelet/vhs-action@v2.1.0
+        with:
+          path: 'assets/terminal.tape'
+          install-fonts: 'true'
       - run: git config user.name github-actions[bot]
       - run: git config user.email github-actions[bot]@users.noreply.github.com
       - run: |
