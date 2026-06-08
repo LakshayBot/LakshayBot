@@ -16,6 +16,6 @@
 
 ## 🛠️ Tech Arsenal
 
-[![](https://skillicons.dev/icons?i=python,pytorch,fastapi,typescript,cs,dotnet,react,nextjs,tailwind,nodejs,postgres,redis,docker,cloudflare,githubactions&perline=8)](https://skillicons.dev)
+[![](https://skillicons.dev/icons?i=python,pytorch,fastapi,typescript,cs,dotnet,react,nextjs,tailwind,nodejs,postgres,redis,docker,cloudflare,githubactions&perline=15)](https://skillicons.dev)
 
 ![Snake eating my contributions](https://raw.githubusercontent.com/LakshayBot/LakshayBot/output/github-contribution-grid-snake.svg)
