@@ -1,0 +1,21 @@
+name: Generate Terminal GIF
+
+on:
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: charmbracelet/vhs-action@v2
+      - run: git config user.name github-actions[bot]
+      - run: git config user.email github-actions[bot]@users.noreply.github.com
+      - run: |
+          if [ -f assets/terminal.gif ]; then
+            git add assets/terminal.gif
+            git commit -m "Generate terminal animation GIF" || true
+            git push
+          fi
