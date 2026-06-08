@@ -8,13 +8,20 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
       - run: mkdir -p assets
       - run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg xvfb
-          curl -fsSL https://github.com/charmbracelet/vhs/releases/latest/download/vhs_linux_amd64 -o vhs
-          chmod +x vhs
-          sudo mv vhs /usr/local/bin/vhs
+          # Install ttyd
+          curl -fsSL https://github.com/tsl0922/ttyd/releases/latest/download/ttyd.x86_64 -o ttyd
+          chmod +x ttyd
+          sudo mv ttyd /usr/local/bin/ttyd
+          # Install vhs
+          go install github.com/charmbracelet/vhs@latest
+          echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
       - run: xvfb-run vhs terminal.tape
       - run: mv terminal.gif assets/terminal.gif
       - uses: stefanzweifel/git-auto-commit-action@v4
