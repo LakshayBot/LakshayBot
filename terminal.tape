@@ -1,4 +1,4 @@
-Output assets/terminal.gif
+Output terminal.gif
 Set Theme "Dracula"
 Set Width 700
 Set Height 380

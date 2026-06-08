@@ -6,19 +6,17 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v4
-      - uses: charmbracelet/vhs-action@v2.1.0
+      - run: mkdir -p assets
+      - uses: charmbracelet/vhs-action@v1
         with:
-          path: 'assets/terminal.tape'
-          install-fonts: 'true'
-      - run: git config user.name github-actions[bot]
-      - run: git config user.email github-actions[bot]@users.noreply.github.com
-      - run: |
-          if [ -f assets/terminal.gif ]; then
-            git add assets/terminal.gif
-            git commit -m "Generate terminal animation GIF" || true
-            git push
-          fi
+          path: 'terminal.tape'
+      - run: mv terminal.gif assets/terminal.gif
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update terminal animation GIF
+          branch: main
+          commit_user_name: vhs-action
+          commit_user_email: actions@github.com
+          file_pattern: 'assets/terminal.gif'
